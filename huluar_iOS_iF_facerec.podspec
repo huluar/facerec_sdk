@@ -25,8 +25,9 @@ Pod::Spec.new do |s|
   s.source_files = 'facerec/*.{h,m}'
   s.public_header_files = "facerec/*.h"
   s.vendored_libraries = "libfacerec.a"
-s.resource="FaceRecOne.bundle"
-
+  s.resource_bundles = {
+'huluar_iOS_iF_facerec' => ['image/*.{png,jpg}']
+   }
   s.requires_arc = true
 
 end
