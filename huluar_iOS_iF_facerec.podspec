@@ -25,10 +25,7 @@ Pod::Spec.new do |s|
   s.source_files = 'facerec/*.{h,m}'
   s.public_header_files = "facerec/*.h"
   s.vendored_libraries = "libfacerec.a"
-    s.resource_bundles = {
-        "facerec_sdk" => ["facerec_sdk/FaceRecOne.bundle/*"]
-    }
-
+    s.resource = "FaceRecOne.bundle"
 
   s.requires_arc = true
 
