@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
  
 
-  s.name         = "iOS_iF_facerec"
+  s.name         = "huluar_iOS_iF_facerec"
   s.version      = "0.0.5"
   s.summary      = "face recognize."
 
@@ -25,7 +25,9 @@ Pod::Spec.new do |s|
   s.source_files = 'facerec/*.{h,m}'
   s.public_header_files = "facerec/*.h"
   s.vendored_libraries = "libfacerec.a"
-  s.resource_bundles = "FaceRecOne.bundle/*"
+    s.resource_bundles = {
+        "facerec_sdk" => ["facerec_sdk/FaceRecOne.bundle/*"]
+    }
 
 
   s.requires_arc = true
