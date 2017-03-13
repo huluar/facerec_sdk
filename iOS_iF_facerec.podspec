@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.license      = "MIT"
 
-  s.author             = { "if" => "yfei89@126.com" }
+  s.author             = { "if" => "apple_victor@163.com" }
 
   s.platform     = :ios
 
